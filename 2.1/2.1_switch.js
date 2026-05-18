@@ -1,18 +1,25 @@
 let a = Math.floor(Math.random() * 100);
 let result;
 
+// Вычисление для первого условия
+let firstValue = (a > 10) ? a : a * 2;
+let firstCondition = firstValue > 5;
+
 switch (true) {
-    case (a > 10 ? a : a * 2) > 5:
+    case firstCondition:
         result = 2 * a + 1;
         break;
     default:
+        // Вычисление вложенного условия
         let inner = (a < 3) ? 1 : 2 * (a - 2);
+        let secondCondition = inner > 4;
         switch (true) {
-            case inner > 4:
+            case secondCondition:
                 result = 5;
                 break;
             default:
-                result = (a % 2 === 0) ? 6 : 7;
+                let evenCondition = (a % 2 === 0);
+                result = evenCondition ? 6 : 7;
         }
 }
 
