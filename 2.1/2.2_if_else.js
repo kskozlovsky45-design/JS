@@ -4,36 +4,30 @@ function manyChecks() {
 
     let result = "";
 
-    // 1. a > 10 
     if (a > 10) {
-        result += "a больше чем 10,";
+        result += "a больше чем 10, ";
     } else {
         result += "a меньше или равно 10, ";
         if (a === 5) {
-            result += "особый случай";
+            result += "особый случай, ";
         }
     }
 
-    // 2. a === 15 
     if (a === 15) {
-        result += " но a не равно 15";
+        result += "но a не равно 15, ";
     }
 
-    // 3. a > 5 
     if (a > 5) {
-        result += " a больше чем 5,";
+        result += "a больше чем 5, ";
     } else {
-        result += " a меньше или равно 5, ";
+        result += "a меньше или равно 5, ";
     }
 
-    // 4. a % 2 
-    if (a % 2 !== 0) {
-        result += " a нечетное";
+    if (a % 2 === 0) {
+        result += "a четное";
     } else {
-        result += " a четное";
+        result += "a нечетное";
     }
 
     console.log(result);
 }
-
-manyChecks();
