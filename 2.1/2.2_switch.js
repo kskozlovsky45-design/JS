@@ -4,38 +4,36 @@ function manyChecks() {
 
     let result = "";
 
-    switch (true) {  
+    switch (true) {
         case a > 10:
-            result += "a больше чем 10,";
+            result += "a больше чем 10, ";
             break;
         default:
-            result += "a меньше или равно 10,";
-            if (a === 5) result += "особый случай";
+            result += "a меньше или равно 10, ";
+            if (a === 5) result += "особый случай, ";
     }
 
     switch (a) {
         case 15:
-            result += " но a не равно 15";
+            result += "но a не равно 15, ";
             break;
     }
 
     switch (true) {
         case a > 5:
-            result += " a больше чем 5";
+            result += "a больше чем 5, ";
             break;
         default:
-            result += " a меньше или равно 5";
+            result += "a меньше или равно 5, ";
     }
 
     switch (a % 2) {
         case 0:
-            result += " a нечетное";
+            result += "a четное";
             break;
         default:
-            result += " a четное";
+            result += "a нечетное";
     }
 
     console.log(result);
 }
-
-manyChecks();
